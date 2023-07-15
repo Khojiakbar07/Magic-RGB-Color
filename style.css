@@ -46,7 +46,7 @@ body {
   margin-top: 180px;
   pointer-events: none;
   font-weight: 900;
-  filter: drop-shadow(2px 4px 6px black);
+  filter: drop-shadow(2px 4px 6px --main-color);
 }
 
 .a-second-title {
@@ -188,6 +188,18 @@ canvas {
   }  
 }
 
+@media (max-width: 991px) {
+  #container h1{
+    font-size: 50px;
+  }
+  #container h2{
+    font-size: 42px;
+  }
+  #container p{
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 768px) {
   .header{
       padding: 2rem 4%;
@@ -203,13 +215,6 @@ canvas {
   }
   #container p{
     font-size: 16px;
-  }
-  .middle .btn{
-    width: 45px;
-    height: 45px;
-  }
-  .middle .btn i{
-    margin-top: 60px;
   }
 
 }
@@ -240,7 +245,38 @@ canvas {
   }
 }
 
-@media (max-width: 514px) {
+@media (max-width: 424px) {
+  #container h1{
+    font-size: 32px;
+  }
+  #container h2{
+    font-size: 29px;
+  }
+  #container p{
+    text-align-last: left;
+    font-size: 10px;
+    margin-bottom: 7px;
+  }
+}
+
+@media (width: 412px) {
+  #container h1{
+    font-size: 32px;
+    margin-top: 250px;
+  }
+  #container h2{
+    font-size: 29px;
+    margin-top: 320px;
+  }
+  #container p{
+    text-align-last: left;
+    font-size: 10px;
+    margin-top: 400px;
+    margin-bottom: 7px;
+  } 
+}
+
+@media (max-width: 400px) {
   #container h1{
     font-size: 35px;
   }
@@ -251,6 +287,34 @@ canvas {
     text-align-last: left;
     font-size: 10px;
     margin-bottom: 7px;
+  }
+}
+
+@media (max-width: 368px) {
+  #container h1{
+    font-size: 29px;
+  }
+  #container h2{
+    font-size: 26px;
+  }
+  #container p{
+    text-align-last: left;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 335px) {
+  #container h1{
+    font-size: 25px;
+  }
+  #container h2{
+    font-size: 21px;
+  }
+  #container p{
+    text-align-last: left;
+    font-size: 9px;
+    margin-bottom: 10px;
   }
 }
 
