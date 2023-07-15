@@ -595,7 +595,7 @@ function splat(x, y, dx, dy, color) {
   velocity.swap();
 
   gl.uniform1i(splatProgram.uniforms.uTarget, density.read[2]);
-  gl.uniform3f(splatProgram.uniforms.color, color[0] * 0.9, color[1] * 0.3, color[2] * 0.3);
+  gl.uniform3f(splatProgram.uniforms.color, color[0] * 0.2, color[1] * 0.6, color[2] * 0.3);
   blit(density.write[1]);
   density.swap();
 }
