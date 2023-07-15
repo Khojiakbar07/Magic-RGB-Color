@@ -48,6 +48,7 @@ body {
   font-weight: 900;
   filter: drop-shadow(2px 4px 6px black);
 }
+
 .a-second-title {
   position: absolute;
   margin-top:38vh;
@@ -66,13 +67,13 @@ canvas {
 
 #container p{
   text-align-last: center;
-  position: absolute;
+  position: fixed;
   justify-content: center;
   color: var(--text-color);
   -webkit-text-stroke: 1.3px white;
   letter-spacing: 1.125px;
   font-size: 20px;
-  margin: 50vh 300px 0 300px ;
+  margin: 50vh 27% 0 25%;
   pointer-events: none;
   font-weight: 300;
 }
@@ -101,6 +102,8 @@ canvas {
 }
 
 .btn i {
+  justify-content: center;
+  align-items: center;
   line-height: 60px;
   font-size: 26px;
   transition: 0.3s linear;
@@ -179,3 +182,95 @@ canvas {
     top: -10%;
   }
 }
+@media (max-width: 1200px) {
+  html{
+      font-size: 55%;
+  }  
+}
+
+@media (max-width: 768px) {
+  .header{
+      padding: 2rem 4%;
+  }
+  section{
+      padding: 10rem 4% 2rem;
+  }
+  #container h1{
+    font-size: 45px;
+  }
+  #container h2{
+    font-size: 40px;
+  }
+  #container p{
+    font-size: 16px;
+  }
+  .middle .btn{
+    width: 45px;
+    height: 45px;
+  }
+  .middle .btn i{
+    margin-top: 60px;
+  }
+
+}
+@media (max-width: 655px) {
+  #container h1{
+    font-size: 43px;
+  }
+  #container h2{
+    font-size: 38px;
+  }
+  #container p{
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+}
+
+@media (max-width: 514px) {
+  #container h1{
+    font-size: 38px;
+  }
+  #container h2{
+    font-size: 34px;
+  }
+  #container p{
+    text-align-last: left;
+    font-size: 12px;
+    margin-bottom: 7px;
+  }
+}
+
+@media (max-width: 514px) {
+  #container h1{
+    font-size: 35px;
+  }
+  #container h2{
+    font-size: 32px;
+  }
+  #container p{
+    text-align-last: left;
+    font-size: 10px;
+    margin-bottom: 7px;
+  }
+}
+
+/* .btn {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: -5px 5px 15px -5px #f1f1f1;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s linear;
+}
+
+.btn i {
+  justify-content: center;
+  align-items: center;
+  line-height: 60px;
+  font-size: 26px;
+  transition: 0.3s linear;
+} */
